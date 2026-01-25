@@ -82,19 +82,21 @@
   </style>
 </head>
 <body>
-  <header>Twixtors by Nitro</header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="movies.html">Movies</a>
-    <a href="anime.html">Anime</a>
-    <a href="series.html">Series</a>
-    <a href="sports.html">Sports</a>
-  </nav>
+  <header>
+  <h1 style="color:#ff4081; text-align:center;">Twixtors by Nitro</h1>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="movies.html">Movies</a>
+  <a href="anime.html">Anime</a>
+  <a href="series.html">Series</a>
+  <a href="sports.html">Sports</a>
+</nav>
 
-  <!-- Search Bar -->
-  <div class="search-container">
-    <input type="text" id="searchInput" onkeyup="searchTwixtors()" placeholder="Search Twixtor clips..." />
-  </div>
+<!-- Search Bar -->
+<div class="search-container">
+  <input type="text" id="searchInput" onkeyup="searchTwixtors()" placeholder="Search Twixtor clips..." />
+</div>
 
 <!-- Action Category -->
 <button class="collapsible">
@@ -184,7 +186,16 @@
   </section>
 </div><!-- CLOSE Actresses content -->
 
-
+<!-- Pagination -->
+<div class="pagination">
+  <a href="#">&laquo; Previous</a>
+  <a href="movies.html?page=1" class="active">1</a>
+  <a href="movies.html?page=2">2</a>
+  <a href="movies.html?page=3">3</a>
+  <a href="movies.html?page=4">4</a>
+  <a href="movies.html?page=5">5</a>
+  <a href="#">Next &raquo;</a>
+</div>
 <footer>&copy; 2024 Twixtors by Nitro. All rights reserved.</footer>
 
 <script>
