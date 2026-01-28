@@ -5,198 +5,352 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Twixtors by Nitro - Movies</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Search bar */
-    .search-container {
-      text-align: center;
-      margin: 20px;
-    }
-    #searchInput {
-      padding: 10px;
-      width: 300px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    /* Collapsible folders */
-    .collapsible {
-      background-color: #1a1a1a;
-      color: #fff;
-      cursor: pointer;
-      padding: 10px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .collapsible:hover { background-color: #333; }
-    .category-thumb { width: 120px; border-radius: 8px; }
-    .category-title { font-size: 1.5em; color: #ff4081; }
-    .content { display: none; padding: 10px 0; }
-
-    /* Grid and cards */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .card {
-      background-color: #1a1a1a;
-      border-radius: 8px;
-      text-align: center;
-      padding-bottom: 10px;
-    }
-    .video-wrapper {
-      max-width: 900px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-    .video-wrapper iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-    }
-    .download-btn {
-      display: inline-block;
-      margin: 5px;
-      padding: 10px 20px;
-      background-color: #ff4081;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    h3, h4 {
-      text-align: center;
-      color: #FF0000;
-      margin-top: 20px;
-    }
-    h2 {
-      text-align: center;
-      color: #ff4081;
-      margin-top: 30px;
-    }
-  </style>
 </head>
 <body>
-  <header>
-  <h1 style="color:#ff4081; text-align:center;">Twixtors by Nitro</h1>
-</header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="movies.html">Movies</a>
-  <a href="anime.html">Anime</a>
-  <a href="series.html">Series</a>
-  <a href="sports.html">Sports</a>
-</nav>
+  <header>Twixtors by Nitro</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="anime.html">Anime</a>
+    <a href="series.html">Series</a>
+    <a href="sports.html">Sports</a>
+  </nav>
 
-<!-- Search Bar -->
-<div class="search-container">
-  <input type="text" id="searchInput" onkeyup="searchTwixtors()" placeholder="Search Twixtor clips..." />
-</div>
+  <!-- Action Category -->
+  <h2 style="text-align:center; color:#ff4081; margin-top:30px;">Action</h2>
 
-<!-- Action Category -->
-<button class="collapsible">
-  <img src="images/action-thumb.jpg" alt="Action" class="category-thumb" />
-  <span class="category-title">Action Twixtors</span>
-</button>
-<div class="content">
-  <!-- Fight Club -->
-  <h3>Fight Club</h3>
+  <!-- Fight Club(1999) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Fight Club</h3>
   <section class="grid">
-    <div class="card twixtor-item"><div class="video-wrapper">
+    <div class="card">
+      <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/siQR1jIePiQ" allowfullscreen></iframe>
-    </div><h3>Tyler Durden Twixtor</h3><a href="https://shrinkme.click/MBtFv" class="download-btn">Download</a></div>
+      <h3>Tyler Durden Twixtor</h3>
+      <a href="https://shrinkme.click/MBtFv" class="download-btn">Download (CC Twixtor)</a>
+      <a href="https://shrinkme.click/Bdzw22Z9" class="download-btn">Download (Without CC)</a>
+    </div>
   </section>
-
-  <!-- The Batman -->
-  <h3>The Batman</h3>
+  
+    <!--The Batman(2022) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">The Batman (2022)</h3>
   <section class="grid">
-    <div class="card twixtor-item"><div class="video-wrapper">
+    <div class="card">
+     <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/kJir7SJSZsA" allowfullscreen></iframe>
-    </div><h3>Robert Pattinson Twixtor</h3><a href="https://shrinkme.click/jji6UgH" class="download-btn">Download</a></div>
+      <h3> The Batman (Robert Pattinson)</h3>
+      <a href="https://shrinkme.click/jji6UgH" class="download-btn">Download (1080p Twixtor)</a>
+      <a href="https://shrinkme.click/37pThL" class="download-btn">Download (720p Twixtor)</a>
+    </div>
   </section>
-</div><!-- CLOSE Action content -->
 
+   <!--MCU (Marvel Cinematic Universe) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">MCU (Marvel Cinematic Universe)</h3>
 
-<!-- Romantic Category -->
-<button class="collapsible">
-  <img src="images/romantic-thumb.jpg" alt="Romantic" class="category-thumb" />
-  <span class="category-title">Romantic Twixtors</span>
-</button>
-<div class="content">
-  <!-- Sanam Teri Kasam -->
-  <h3>Sanam Teri Kasam</h3>
+  <!-- Ironman (2008) Sub-subcategory -->
+  <h4 style="text-align:center; color:#ffd700; margin-top:15px;">Ironman (2008)</h4>
   <section class="grid">
-    <div class="card twixtor-item"><div class="video-wrapper">
+    <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/IMhWch69tLY" allowfullscreen></iframe>
+      <h3>Ironman 4K Twixtor</h3>
+      <a href="https://shrinkme.click/78BAEDnI" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- Venom: Let There Be Carnage Sub-subcategory -->
+  <h4 style="text-align:center; color:#ffd700; margin-top:15px;"> Venom: Let There Be Carnage</h4>
+  <section class="grid">
+    <div class="card">
+     <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/dsgiAjw4vlA" allowfullscreen></iframe>
+      <h3>Venom 4K Twixtor</h3>
+      <a href="https://shrinkme.click/VP5S3HS" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- Drive(2011) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Drive (2011)</h3>
+  <section class="grid">
+    <div class="card">
+      <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/XSNxo7smEDA" allowfullscreen></iframe>
+      <h3>Drive (Rayn Gosling) 4K Twixtor 1</h3>
+      <a href="https://shrinkme.click/AaMhGM" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+     <div class="card">
+      <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/74YOzssrjnc" allowfullscreen></iframe>
+      <h3>Drive (Rayn Gosling) 4K Twixtor 2</h3>
+      <a href="https://shrinkme.click/AaMhGM" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+    <div class="card">
+      <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/Vu1W3gD16KI" allowfullscreen></iframe>
+      <h3>Drive (Rayn Gosling) 4K Twixtor 3</h3>
+      <a href="https://shrinkme.click/AaMhGM" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+  </section>
+  
+<!-- Flying Jatt(2016) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Flying Jatt</h3>
+  <section class="grid">
+  <div class="card">
+      <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/IPoCikDb7CI" allowfullscreen></iframe>
+      <h3>Flying jatt 4K Twixtor Part 1</h3>
+      <a href="https://shrinkme.dev/RoSei" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+    <div class="card">
+      <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/KqfaSs2BMDo" allowfullscreen></iframe>
+      <h3>Flying jatt 4K Twixtor Part 2</h3>
+      <a href="https://shrinkme.dev/RoSei" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+    <div class="card">
+      <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/HriWg1-4jRs" allowfullscreen></iframe>
+      <h3>Flying jatt 4K Twixtor Part 3</h3>
+      <a href="https://shrinkme.dev/RoSei" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+  </section>
+  
+   <!--Animal(2023) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Animal (2023)</h3>
+  <section class="grid">
+    <div class="card">
+     <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/LXqm9xY8cnc" allowfullscreen></iframe>
+      <h3> Animal (Ranvijay SIngh)</h3>
+      <a href="https://shrinkme.click/i4lird" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- Devara(2024) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Devara(2024)</h3>
+  <section class="grid">
+    <div class="card">
+      <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/lcOLfa8eOw8" allowfullscreen></iframe>
+      <h3>Devara 4K Twixtor</h3>
+      <a href="https://shrinkme.click/cFKMIHX" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+  </section>
+
+   <!--Lucky Baskhar(2024) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Lucky Baskhar(2024)</h3>
+  <section class="grid">
+    <div class="card">
+     <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/KqdN-G8_tDA" allowfullscreen></iframe>
+      <h3>Lucky Baskhar 4K Twixtor 1</h3>
+      <a href="https://shrinkme.click/U5QTqe1" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+     <div class="card">
+       <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/sGB0RqvfwrY" allowfullscreen></iframe>
+      <h3>Lucky Baskhar 4K Twixtor 2</h3>
+      <a href="https://shrinkme.click/U5QTqe1" class="download-btn">Download (CC Twixtor)</a>
+    </div>
+  </section><!-- CLOSE Action content -->
+
+  <!-- Romantic Category -->
+  <h2 style="text-align:center; color:#ff4081; margin-top:30px;">Romantic </h2>
+       
+   <!-- The Amazing Spiderman Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">The Amazing Spiderman</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/3rTuj9CBJJY" allowfullscreen></iframe>
+      <h3>The Amazing Spiderman Love Twixtor 1</h3>
+      <a href="https://shrinkme.click/00YB0Puw" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+     <div class="card">
+      <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/ilxsdgqbzgc" allowfullscreen></iframe>
+      <h3>The Amazing Spiderman Twixtor 2</h3>
+      <a href="https://shrinkme.click/00YB0Puw" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+     <div class="card">
+     <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/cubyVEIIe98" allowfullscreen></iframe>
+      <h3>The Amazing Spiderman Twixtor 3</h3>
+      <a href="https://shrinkme.click/00YB0Puw" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+     <div class="card">
+     <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/YBNKda2sBkA" allowfullscreen></iframe>
+      <h3>The Amazing Spiderman Twixtor 4</h3>
+      <a href="https://shrinkme.click/00YB0Puw" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+  </section>
+       
+  <!-- The Fall Guy Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">The Fall Guy</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/3SBONF1LNOE" allowfullscreen></iframe>
+      <h3>The Fall Guy Love Twixtor</h3>
+      <a href="https://shrinkme.click/2BdWII" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- The Tears Smith Subcategory -->
+    <h3 style="text-align:center; color:#FF0000; margin-top:20px;">The Tears Smith</h3>
+    <section class="grid">
+    <div class="card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/WDidYxhvckM" allowfullscreen></iframe>
+        <h3>The Tears Smith Love Twixtor</h3>
+        <a href="https://shrinkme.click/4OocnzW" class="download-btn">Download (Love Twixtor)</a>
+      </div>
+    </section>
+
+  <!-- Your Fault Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Your Fault</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/DEig-yButLI" allowfullscreen></iframe>
+      <h3>Your Fault Love Twixtor</h3>
+      <a href="https://shrinkme.click/lLPvp" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- Ghosted Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Ghosted</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/A3qYSQzPP74" allowfullscreen></iframe>
+      <h3>Ghosted Love Twixtor</h3>
+      <a href="https://shrinkme.click/yY9vR6Op" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- Blade Runner Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Blade Runner</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/HmXVSI4zpxw" allowfullscreen></iframe>
+      <h3>Blade Runner Love Twixtor</h3>
+      <a href="https://shrinkme.ink/x6B5" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+  </section>
+  
+  <!-- Drive Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Drive</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/4dIcPYgJJ6s" allowfullscreen></iframe>
+      <h3>Drive Love Twixtor</h3>
+      <a href="https://shrinkme.click/VVmPi" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- Fifty Shades of Grey Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Fifty Shades of Grey</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/U9Qke__XDdM" allowfullscreen></iframe>
+      <h3>Fifty Shades of Grey Love Twixtor</h3>
+      <a href="https://shrinkme.ink/AbbGKOHi" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- Dr Strange Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Dr Strange</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/LRGc_uX5zns" allowfullscreen></iframe>
+      <h3>Dr Strange Love Twixtor</h3>
+      <a href="https://shrinkme.click/kCBy" class="download-btn">Download (Love Twixtor)</a>
+    </div>
+  </section>
+
+  <!-- Sanam Teri Kasam Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Sanam Teri Kasam</h3>
+  <section class="grid">
+   <div class="card">
+    <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/pEHgiVyN8o0" allowfullscreen></iframe>
-    </div><h3>Sanam Teri Kasam Love Twixtor</h3><a href="https://shrinkme.click/Xgedw" class="download-btn">Download</a></div>
+      <h3>Sanam Teri Kasam Love Twixtor</h3>
+      <a href="https://shrinkme.click/Xgedw" class="download-btn">Download (Love Twixtor)</a>
+    </div>
   </section>
 
-  <!-- Lucky Baskhar -->
-  <h3>Lucky Baskhar</h3>
+  <!-- Lucky Baskhar Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Lucky Baskhar</h3>
   <section class="grid">
-    <div class="card twixtor-item"><div class="video-wrapper">
+   <div class="card">
+    <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/6z51ZvK54i0" allowfullscreen></iframe>
-    </div><h3>Lucky Baskhar Love Twixtor 1</h3><a href="https://shrinkme.click/U5QTqe1" class="download-btn">Download</a></div>
-    <div class="card twixtor-item"><div class="video-wrapper">
+      <h3>Lucky Baskhar Love Twixtor 1</h3>
+      <a href="https://shrinkme.click/U5QTqe1" class="download-btn">Download (Love Twixtor)</a>
+   </div>
+    <div class="card">
+      <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/6JPQhBt4ycM" allowfullscreen></iframe>
-    </div><h3>Lucky Baskhar Love Twixtor 2</h3><a href="https://shrinkme.click/U5QTqe1" class="download-btn">Download</a></div>
+      <h3>Lucky Baskhar Love Twixtor 2</h3>
+      <a href="https://shrinkme.click/U5QTqe1" class="download-btn">Download (Love Twixtor)</a>
+    </div>
   </section>
 
-  <!-- 96 (2019) -->
-  <h3>96 (2019)</h3>
+  <!-- 96 (2019) Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">96 (2019)</h3>
   <section class="grid">
-    <div class="card twixtor-item"><div class="video-wrapper">
+   <div class="card">
+    <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/pEHgiVyN8o0" allowfullscreen></iframe>
-    </div><h3>96 (2019) Love Twixtor</h3><a href="https://shrinkme.click/S2qYG" class="download-btn">Download</a></div>
-  </section>
-</div><!-- CLOSE Romantic content -->
+      <h3>96 (2019) Love Twixtor</h3>
+      <a href="https://shrinkme.click/S2qYG" class="download-btn">Download (4K Love Twixtor)</a>
+    </div>
+  </section><!-- CLOSE Romantic content -->
 
-
-<!-- Actresses (Movies) Category -->
-<button class="collapsible">
-  <img src="images/actress-thumb.jpg" alt="Actresses" class="category-thumb" />
-  <span class="category-title">Actresses (Movies)</span>
-</button>
-<div class="content">
-  <!-- Ghosted -->
-  <h3>Ghosted</h3>
+  <!-- Actresses (Movies) Category -->
+  <h2 style="text-align:center; color:#ff4081; margin-top:30px;">Actresses (Movies)</h2>
+  
+  <!-- Ghosted Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Ghosted</h3>
   <section class="grid">
-    <div class="card twixtor-item"><div class="video-wrapper">
+   <div class="card">
+    <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/RIurbuRYEG8" allowfullscreen></iframe>
-    </div><h3>Ana de Armas Twixtor</h3><a href="https://shrinkme.click/yY9vR6Op" class="download-btn">Download</a></div>
+      <h3>Ana de Armas Twixtor</h3>
+      <a href="https://shrinkme.click/yY9vR6Op" class="download-btn">Download (4K Twixtor)</a>
+    </div>
   </section>
-
-  <!-- Tu Jhoothi Main Makkaar -->
-  <h3>Tu Jhoothi Main Makkaar</h3>
+  
+  <!-- Tu Jhoothi Main Makkaar Subcategory -->
+  <h3 style="text-align:center; color:#FF0000; margin-top:20px;">Tu Jhoothi Main Makkaar</h3>
   <section class="grid">
-    <div class="card twixtor-item"><div class="video-wrapper">
+   <div class="card">
+    <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/52BNUyecIk0" allowfullscreen></iframe>
-    </div><h3>Shraddha Kapoor 4K Twixtor 1</h3><a href="https://shrinkme.click/D6bvuvB" class="download-btn">Download</a></div>
-    <div class="card twixtor-item"><div class="video-wrapper">
+      <h3>Shraddha Kapoor 4K Twixtor 1</h3>
+      <a href="https://shrinkme.click/D6bvuvB" class="download-btn">Download (4K Twixtor)</a>
+    </div>
+     <div class="card">
+      <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/-K28PXJYcpI" allowfullscreen></iframe>
-    </div><h3>Shraddha Kapoor 4K Twixtor 2</h3><a href="https://shrinkme.click/D6bvuvB" class="download-btn">Download</a></div>
-    <div class="card twixtor-item"><div class="video-wrapper">
+      <h3>Shraddha Kapoor 4K Twixtor 2</h3>
+      <a href="https://shrinkme.click/D6bvuvB" class="download-btn">Download (4K Twixtor)</a>
+    </div>
+     <div class="card">
+     <div class="video-wrapper">
       <iframe src="https://www.youtube.com/embed/xGEmuisUJho" allowfullscreen></iframe>
-    </div><h3>Shraddha Kapoor 4K Twixtor 3</h3><a href="https://shrinkme.click/D6bvuvB" class="download-btn">Download</a></div>
-  </section>
-</div><!-- CLOSE Actresses content -->
+      <h3>Shraddha Kapoor 4K Twixtor 3</h3>
+      <a href="https://shrinkme.click/D6bvuvB" class="download-btn">Download (4K Twixtor)</a>
+    </div>
+    </section><!-- CLOSE Actresses content -->
 
-<!-- Pagination -->
-<div class="pagination">
-  <a href="#">&laquo; Previous</a>
-  <a href="movies.html?page=1" class="active">1</a>
-  <a href="movies.html?page=2">2</a>
-  <a href="movies.html?page=3">3</a>
-  <a href="movies.html?page=4">4</a>
-  <a href="movies.html?page=5">5</a>
-  <a href="#">Next &raquo;</a>
-</div>
-<footer>&copy; 2024 Twixtors by Nitro. All rights reserved.</footer>
+  <footer>
+    &copy; 2024 Twixtors by Nitro. All rights reserved.
 
 <script>
   // Collapsible folders
