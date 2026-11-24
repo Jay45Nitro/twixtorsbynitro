@@ -1,0 +1,4 @@
+.movie-poster { display:block; position:relative; width:100%; padding:0; border:0; background:#171717; cursor:pointer; }
+.movie-poster img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; }
+.movie-poster::after { content:'▶'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:white; background:#151515dd; border-radius:.5rem; padding:.4rem .9rem; font-size:1.4rem; }
+.movie-poster:focus-visible { outline:3px solid #ff5938; outline-offset:-3px; }
